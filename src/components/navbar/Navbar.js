@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Container, LogoContainer, MenuItem, Menu, Wrapper, MenuItemLink, MobileIcon} from "./Navbar.elements";
 import { FaHandMiddleFinger, FaBars, RiHomeSmileFill, FaStore, FaRegLaughWink, FaHandsHelping, FaCannabis, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons";
-
+import CartWidget from "../store/CartWidget";
 const Navbar = () =>{
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
@@ -33,7 +33,7 @@ const Navbar = () =>{
                         <MenuItem>
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
-                                    <FaStore />
+                                    <CartWidget />
                                     TIENDA
                                 </div>
                             </MenuItemLink>
