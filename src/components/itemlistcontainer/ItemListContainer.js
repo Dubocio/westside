@@ -6,9 +6,9 @@ import lacy from "../assets/img/lacy.jpg";
 import panthers from "../assets/img/panthers.jpg";
 
 const camisetas = [
-    {id: 1, image: {buccaneers}, title: "Buccaneers"},
-    {id: 2, image: {lacy}, title: "Lacy"},
-    {id: 3, image: {panthers}, title: "Panthers"},
+    {id: 1, image: "https://i.ibb.co/RbPyv45/buccaneers.jpg" , title: "Buccaneers"},
+    {id: 2, image: "https://i.ibb.co/p2Zw6bn/lacy.jpg", title: "Lacy"},
+    {id: 3, image: "https://i.ibb.co/S3N6mXy/panthers.jpg", title: "Panthers"},
 ];
 
 
