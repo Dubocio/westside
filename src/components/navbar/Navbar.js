@@ -3,6 +3,7 @@ import { Container, LogoContainer, MenuItem, Menu, Wrapper, MenuItemLink, Mobile
 import { FaHandMiddleFinger, FaBars, RiHomeSmileFill, FaStore, FaRegLaughWink, FaHandsHelping, FaCannabis, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CartWidget from "../store/CartWidget";
+import { NavLink } from 'react-router-dom';
 const Navbar = () =>{
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
@@ -26,7 +27,7 @@ const Navbar = () =>{
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
                                     <FaCannabis />
-                                    HOME
+                                    <NavLink className="nav__link" to='/'>HOME</NavLink>
                                 </div>
                             </MenuItemLink>
                         </MenuItem>
@@ -34,7 +35,7 @@ const Navbar = () =>{
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
                                     <CartWidget />
-                                    TIENDA
+                                    <NavLink className="nav__link" to='/categoria/camisetas'>CAMISETAS</NavLink>
                                 </div>
                             </MenuItemLink>
                         </MenuItem>
@@ -42,7 +43,7 @@ const Navbar = () =>{
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
                                     <FaRegLaughWink />
-                                    SOBRE NOSOTROS
+                                    <NavLink className="nav__link" to='/categoria/shorts'>SHORTS</NavLink>
                                 </div>
                             </MenuItemLink>
                         </MenuItem>
@@ -50,7 +51,7 @@ const Navbar = () =>{
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
                                     <FaHandsHelping />
-                                    ¡CONTACTANOS!
+                                    <NavLink className="nav__link" to='/nosotros'>¡CONTACTANOS!</NavLink> 
                                 </div>
                           </MenuItemLink>
                         </MenuItem>
