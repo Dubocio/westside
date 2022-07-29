@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Container, LogoContainer, MenuItem, Menu, Wrapper, MenuItemLink, MobileIcon} from "./Navbar.elements";
-import { FaHandMiddleFinger, FaBars, RiHomeSmileFill, FaStore, FaRegLaughWink, FaHandsHelping, FaCannabis, FaTimes } from "react-icons/fa";
+import { FaHandMiddleFinger, FaCartPlus, FaBars, RiHomeSmileFill, FaStore, FaRegLaughWink, FaHandsHelping, FaCannabis, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CartWidget from "../store/CartWidget";
 import { NavLink } from 'react-router-dom';
@@ -50,8 +50,8 @@ const Navbar = () =>{
                         <MenuItem>
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
-                                    <FaHandsHelping />
-                                    <NavLink className="nav__link" to='/nosotros'>¡CONTACTANOS!</NavLink> 
+                                    <FaCartPlus />
+                                    <NavLink className="nav__link" to='/cart/'>CARRITO</NavLink> 
                                 </div>
                           </MenuItemLink>
                         </MenuItem>

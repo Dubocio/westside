@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import ItemDetail from "../ItemDetail/ItemDetal";
 import { useParams } from 'react-router-dom';
 
+
 const camisetas = [
     {
         id:1, image: "https://i.ibb.co/RbPyv45/buccaneers.jpg" , title: "Buccaneers", category: 'camisetas',
@@ -38,7 +39,7 @@ export const ItemDetailContainer = () => {
             }, 1000);
         });
         getData.then(res => setData(res.find(camisetas => camisetas.id === parseInt(detalleId))));
-    }, [detalleId])
+    }, [])
 
 
     return (
