@@ -4,6 +4,7 @@ import { FaHandMiddleFinger, FaCartPlus, FaBars, RiHomeSmileFill, FaStore, FaReg
 import { IconContext } from "react-icons";
 import CartWidget from "../store/CartWidget";
 import { NavLink } from 'react-router-dom';
+import Cart from "../Cart/Cart";
 const Navbar = () =>{
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
