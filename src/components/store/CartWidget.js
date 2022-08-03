@@ -1,10 +1,12 @@
-import { FaHandMiddleFinger, FaBars, RiHomeSmileFill, FaStore, FaRegLaughWink, FaHandsHelping, FaCannabis, FaTimes } from "react-icons/fa";
+import { FaStore } from "react-icons/fa";
 import React from "react";
+import { useCartContext } from "../../context/CartContext";
 
 const  CartWidget= () => {
-
+// const {totalProducts} = useCartContext();
     return (
-        <FaStore/>
+         <FaStore/>
+        // <span>{totalProducts() || ''}</span>
     );
 };
 export default CartWidget;
