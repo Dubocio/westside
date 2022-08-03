@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Container, LogoContainer, MenuItem, Menu, Wrapper, MenuItemLink, MobileIcon} from "./Navbar.elements";
-import { FaHandMiddleFinger, FaCartPlus, FaBars, FaRegLaughWink, FaCannabis, FaTimes } from "react-icons/fa";
+import { FaHandMiddleFinger, FaCartPlus, FaBars, FaRegLaughWink, FaCannabis, FaTimes, FaStore } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import CartWidget from "../store/CartWidget";
 import { NavLink } from 'react-router-dom';
@@ -35,7 +35,7 @@ const Navbar = () =>{
                         <MenuItem>
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
-                                    <CartWidget />
+                                    <FaStore/>
                                     
                                     <NavLink className="nav__link" to='/categoria/camisetas'>CAMISETAS</NavLink>
                                     
