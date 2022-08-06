@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import { Container, LogoContainer, MenuItem, Menu, Wrapper, MenuItemLink, MobileIcon} from "./Navbar.elements";
 import { FaHandMiddleFinger, FaCartPlus, FaBars, FaRegLaughWink, FaCannabis, FaTimes, FaStore } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import CartWidget from "../store/CartWidget";
-import { NavLink } from 'react-router-dom';
-import Cart from "../Cart/Cart";
+import {  NavLink } from 'react-router-dom';
+
+
 const Navbar = () =>{
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
@@ -54,7 +54,7 @@ const Navbar = () =>{
                             <MenuItemLink onClick={()=> setShowMobileMenu(!showMobileMenu)}>
                                 <div>
                                     <FaCartPlus />
-                                    <NavLink className="nav__link" to='/cart/'>CARRITO</NavLink> 
+                                    <NavLink className="nav__link" to='/cart'>CARRITO</NavLink> 
                                 </div>
                           </MenuItemLink>
                         </MenuItem>

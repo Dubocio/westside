@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Counter = styled.div`
 width: fit-content;
-background-color: gray;
+background-color: #dabe78;
 margin: auto;
 padding: 1rem;
 text-align: center`;
