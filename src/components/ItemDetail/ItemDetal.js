@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import ItemCounter from "../ItemCount/item";
 import { Link } from 'react-router-dom';
 import { useCartContext } from "../../context/CartContext";
+import '../ItemDetail/itemdetail.css'
 const ItemDetail = ({data}) => {
     const [irAlCarrito, setIrAlCarrito] = useState(false)
     const {addProduct} = useCartContext();
@@ -20,7 +21,7 @@ const ItemDetail = ({data}) => {
                     <h1>Valor Unitario: ${data.price}</h1>
                     {
                     irAlCarrito 
-                    ? <Link to='/cart'>Terminar compra</Link> 
+                    ? <Link to='/cart'><button>Terminar compra</button></Link> 
                     : <ItemCounter initial={1} stock={5} onAdd={onAdd} />
                     }
                 </div>
