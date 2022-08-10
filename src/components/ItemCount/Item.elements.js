@@ -10,3 +10,4 @@ text-align: center`;
 
 export const LetraContador = styled.div`
 font-size: 1.5rem;`
+

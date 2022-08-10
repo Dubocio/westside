@@ -4,6 +4,7 @@ import { useCartContext } from '../../context/CartContext';
 import ItemCart from '../ItemCart/itemCart';
 import '../Cart/cart.css';
 import { addDoc, getFirestore, collection } from 'firebase/firestore';
+import Swal from 'sweetalert2'
 
 
 const Cart = () => {
@@ -25,6 +26,9 @@ const Cart = () => {
     const db = getFirestore();
     const ordersCollection = collection(db, 'ordenes');
     addDoc(ordersCollection, orden).then(({ id }) => console.log(id))
+    Swal.fire(
+      'Muchas gracias por tu compra, pronto vas a recibir tus productos junto con tu factura!'
+    )
   }
   
   if (cart.length === 0){

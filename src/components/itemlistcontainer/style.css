@@ -1,0 +1,50 @@
+.horizon{
+    display: flex;
+    margin: 200px;
+    padding: 100px;
+    justify-content: space-between;
+    position: sticky;
+    
+    
+}
+
+h1 {
+    align-items: center;
+    font-size: 80px;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 960px){
+    .horizon{
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+}
+
+@media screen and (max-witdh: 880px){
+    .horizon{
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-witdh: 500px){
+    .horizon{
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    }
+}
+@media screen and (max-witdh: 260px){
+    .horizon{
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        margin: 100px;
+    }
+}

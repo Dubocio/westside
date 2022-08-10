@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from 'react-router-dom';
 import {getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
+import '../itemlistcontainer/style.css'
 
 
 
@@ -24,8 +25,8 @@ export const ItemListContainer = () => {
 
     return (
         <>    
-        
-        <ItemList data={data}/>
+        <h1>Productos Disponibles:</h1>
+        <div className="horizon"><ItemList data={data}/></div>
         </>
         
 )};
