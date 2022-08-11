@@ -2,12 +2,12 @@
 
 ReactJs Comision 37955, Profesor Felix Blanco.
 
-## Librerias Utilizadas
+# Librerias Utilizadas
 
-# StyledComponents
+#### StyledComponents
 
-# FaIcons
+### FaIcons
 
-# Swal2
+### Swal2
 
-# React Router Dom
+### React Router Dom
