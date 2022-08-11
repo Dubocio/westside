@@ -9,6 +9,18 @@
     object-fit: cover;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    opacity: 0.7;
+    
+}
+
+.camiseta img:hover{
+    opacity: 1;
+    transition: 200ms ease-in;
 }
 
 h3 {
