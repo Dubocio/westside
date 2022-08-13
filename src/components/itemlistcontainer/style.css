@@ -3,8 +3,8 @@
     margin: 200px;
     padding: 100px;
     justify-content: space-between;
-    position: sticky;
-    
+    position: relative;
+
     
 }
 
@@ -30,6 +30,7 @@ h1 {
         width: 40%;
         justify-content: center;
         align-items: center;
+        display: none;
     }
 }
 @media screen and (max-witdh: 500px){

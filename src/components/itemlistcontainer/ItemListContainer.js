@@ -24,9 +24,11 @@ export const ItemListContainer = () => {
 
 
     return (
-        <>    
+        <>
+          
         <h1>Productos Disponibles:</h1>
         <div className="horizon"><ItemList data={data}/></div>
+        <div className="back">  </div>
         </>
         
 )};

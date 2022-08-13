@@ -20,10 +20,11 @@ function App() {
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart/>} />
           </Routes>
-          <Footer/>
+          
       </CartProvider>
-      
+      <Footer/>
     </BrowserRouter>
+    
   </>
   )
 }
